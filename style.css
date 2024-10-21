@@ -1,0 +1,143 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e2e2;
+}
+
+.header__container{
+    display: flex;
+    justify-content: center;
+}
+
+.header__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 17px;
+    background-color: white;
+}
+
+.header__title {
+    color: #3b5bdb;
+    font-weight: bold;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 250px;
+}
+
+.input__box {
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 5px;
+}
+
+.header__input--search {
+    font-size: 17px;
+    height: 50px;
+    width: 550px;
+    padding: 17px;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 900px;
+    margin: 30px;
+    border-radius: 7px;
+}
+
+h2{
+    padding: 45px;
+    font-size: 23px;
+
+}
+
+.form__input-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.form__input--text{
+    width: 450px;
+    height: 45px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.form__input--priority {
+    width: 275px;
+    padding-left: 15px;
+    color: gray;
+    font-size: 15px;
+}
+
+.form__button--add-task{
+    margin: 40px; 
+    border-color: #3b5bdb;
+    height: 60px;
+    background-color: #3b5bdb;
+    border-radius: 7px;
+    font-size: 17px;
+    color: white;
+}
+
+.tasks__container{
+    width: 900px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 40px;
+    margin-top: 0px;
+}
+
+.task__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 55px;
+    background-color: #f1f3f5;
+    margin: 50px;
+    margin-top: 0px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.task__item::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 12px;
+    height: 12px;
+    margin-left: 23px;
+    margin-top: 7px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.task__item.urgent::before {
+    background-color: #e40404; 
+}
+
+.task__item.important::before {
+    background-color: #f3a703;
+}
+
+.task__item.normal::before {
+    background-color: #028302;
+}
+
+
+
+.task__button--remove-task{
+    background-color: black;
+    width: 10px;
+}
