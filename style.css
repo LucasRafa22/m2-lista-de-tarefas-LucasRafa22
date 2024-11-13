@@ -135,9 +135,9 @@ h2{
     background-color: #028302;
 }
 
-
-
 .task__button--remove-task{
-    background-color: black;
-    width: 10px;
+    background-image: url(assets/trash-icon.svg);
+    border: none;
+    background-size: cover;
+    background-position: center;
 }
